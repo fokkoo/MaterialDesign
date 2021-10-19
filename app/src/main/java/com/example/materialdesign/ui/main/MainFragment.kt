@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import com.example.materialdesign.R
 
 class MainFragment : Fragment() {
-
+//
     companion object {
         fun newInstance() = MainFragment()
     }
