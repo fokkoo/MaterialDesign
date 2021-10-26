@@ -7,7 +7,11 @@
 
         <item name="android:textColor">@android:color/holo_red_dark</item>
         <item name="strokeColor">@android:color/holo_red_dark</item>
-        <item name="strokeWidth">3dp</item>
+        <item name="strokeWidth">5dp</item>
+    </style>
+
+    <style name="MarsMainButton.Warning">
+        <item name="strokeColor">#ED7F09</item>
     </style>
 
 </resources>
