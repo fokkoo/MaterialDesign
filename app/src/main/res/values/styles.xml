@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <style name="MarsMainButtonApp" parent="Theme.MaterialComponents.Light.NoActionBar">
+
+        <item name="materialButtonStyle">@style/MarsMainButton</item>
+
+    </style>
+
 
     <style name="MarsMainButton" parent="Widget.MaterialComponents.Button">
 
