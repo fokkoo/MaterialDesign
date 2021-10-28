@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/bottom_view_earth"
+        android:icon="@drawable/ic_baseline_blur_circular_24"
+
+        android:title="Earth"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/bottom_view_mars"
+        android:icon="@drawable/ic_baseline_add_24"
+
+        android:title="Mars"
+        app:showAsAction="withText"
+        />
+    <item
+        android:id="@+id/bottom_view_uran"
+        android:icon="@drawable/ic_launcher_background"
+
+        android:title="Uran"
+        app:showAsAction="ifRoom"
+        />
+</menu>
