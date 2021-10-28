@@ -45,6 +45,15 @@
 
         />
 
+    <Button
+        android:id="@+id/outlinedButtonMars"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Outlined button outlinedButtonApp"
+        app:icon="@drawable/ic_baseline_add_24"
+
+        />
 
 </LinearLayout>
 
