@@ -7,8 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".ui.main.MainFragment">
 
-    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+    <FrameLayout
         android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -21,6 +20,8 @@
             android:scaleType="fitCenter"
             android:contentDescription="@string/photo_of_the_day_stub"
             app:srcCompat="@drawable/ic_no_photo_vector" />
+
+
     </FrameLayout>
 
     <TextView

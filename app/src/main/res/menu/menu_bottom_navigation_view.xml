@@ -13,13 +13,13 @@
         android:icon="@drawable/ic_baseline_add_24"
 
         android:title="Mars"
-        app:showAsAction="withText"
+        app:showAsAction="always"
         />
     <item
         android:id="@+id/bottom_view_uran"
         android:icon="@drawable/ic_launcher_background"
 
         android:title="Uran"
-        app:showAsAction="ifRoom"
+        app:showAsAction="always"
         />
 </menu>

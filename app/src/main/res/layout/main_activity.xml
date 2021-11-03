@@ -13,6 +13,13 @@
 
 
 
+    <com.example.materialdesign.ui.main.EquilateralImageView
+        android:id="@+id/image_view"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/photo_of_the_day_stub"
+        app:srcCompat="@drawable/ic_no_photo_vector" />
 
 
     <Button
@@ -55,6 +62,15 @@
 
         />
 
+    <Button
+        android:id="@+id/Go_TO_bottom_navigation_view"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go_TO_bottom_navigation_view"
+        app:icon="@drawable/ic_baseline_add_24"
+
+        />
 </LinearLayout>
 
 
