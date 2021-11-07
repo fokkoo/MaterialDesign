@@ -1,4 +1,5 @@
 package com.example.materialdesign.ui.main
+
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -6,7 +7,10 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import coil.api.load
+import com.example.materialdesign.MainActivity
 import com.example.materialdesign.R
+import com.example.materialdesign.databinding.MainActivityBinding
 
 
 class PictureOfTheDayFragment : Fragment() {
@@ -25,7 +29,7 @@ class PictureOfTheDayFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         viewModel.getData().observe(
-            this @PictureOfTheDayFragment,
+            viewLifecycleOwner,
             Observer<PictureOfTheDayData> { renderData(it) })
     }
 
@@ -60,15 +64,22 @@ class PictureOfTheDayFragment : Fragment() {
                     //нужную extension-функцию и передать ссылку и заглушки для placeholder
 
 
-                    image_view.load(url) {
+                    val binding = MainActivityBinding.inflate(layoutInflater)
+                    binding.imageView.load(url) {
                         lifecycle(this@PictureOfTheDayFragment)
                         error(R.drawable.ic_load_error_vector)
                         placeholder(R.drawable.ic_no_photo_vector)
+
+                        /*         image_view.load(url) {
+                                     lifecycle(this@PictureOfTheDayFragment)
+                                     error(R.drawable.ic_load_error_vector)
+                                     placeholder(R.drawable.ic_no_photo_vector)
+                                 }*/
                     }
                 }
             }
         }
+
+
     }
-
-
 }

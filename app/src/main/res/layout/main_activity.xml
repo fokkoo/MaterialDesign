@@ -19,7 +19,7 @@
         android:layout_height="300dp"
         android:layout_gravity="center"
         android:contentDescription="@string/photo_of_the_day_stub"
-        app:srcCompat="@drawable/ic_no_photo_vector" />
+        app:srcCompat="@drawable/ic_baseline_blur_circular_24" />
 
 
     <Button
